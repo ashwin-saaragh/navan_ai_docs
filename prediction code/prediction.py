@@ -5,9 +5,12 @@ import argparse
 # get path to the downloaded model and image to predict as arguments 
 parser = argparse.ArgumentParser(description='Argument to collct info')
 parser.add_argument('--model_path', help='path to the downloaded model')
+parser.add_argument('--class_path', help='path to the downloaded classnames file')
 parser.add_argument('--image_path', help='path to the test image')
+
 args = parser.parse_args()
 model_path = args.model_path
+class_path = args.class_path
 image_path = args.image_path
 
 # only for testing
@@ -25,7 +28,7 @@ img = np.expand_dims(img, axis=0)
 
 # prediction
 result = model.predict(img)
-lines = [line.replace("\n","") for line in open("E:\DEV\\navan_ai_docs\prediction code\classes.names","r").readlines()]
+lines = [line.replace("\n","") for line in open(class_path,"r").readlines()]
 classes = {i:lines[i] for i in range(len(lines))}
 prediction_probability = {i:j for i,j in zip(classes.values(),result.tolist()[0])}
 
