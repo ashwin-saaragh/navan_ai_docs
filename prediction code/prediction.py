@@ -13,10 +13,6 @@ model_path = args.model_path
 class_path = args.class_path
 image_path = args.image_path
 
-# only for testing
-# model_path = "61821920.h5"
-# image_path = "1.jpg"
-
 #load model
 model = tf.keras.models.load_model(model_path)
 input_shape = model.input_shape[1:]
