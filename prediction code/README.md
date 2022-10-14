@@ -1,6 +1,6 @@
 # How to load and use the model file :
 
-- Once you've downloaded the model file you can test it in your local system with the code snippet. 
+- Once you've downloaded the model file you can test it in your local system with the code snippet. Please use the Github repo with sample code with the link provided in export model page. 
 - You need to have python installed in your system. python 2.7+ and 3.4+ comes with pip and virtualenv along with installation. Create an environment and install the required packages.
 - Run the following command to install requirements using pip
 

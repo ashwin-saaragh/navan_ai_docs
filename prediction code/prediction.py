@@ -3,7 +3,7 @@ import numpy as np
 import argparse
 
 # get path to the downloaded model and image to predict as arguments 
-parser = argparse.ArgumentParser(description='Argument to collct info')
+parser = argparse.ArgumentParser(description='Argument to collect info')
 parser.add_argument('--model_path', help='path to the downloaded model')
 parser.add_argument('--class_path', help='path to the downloaded classnames file')
 parser.add_argument('--image_path', help='path to the test image')
