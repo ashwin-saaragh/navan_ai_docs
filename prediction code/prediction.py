@@ -25,5 +25,9 @@ img = np.expand_dims(img, axis=0)
 
 # prediction
 result = model.predict(img)
+lines = [line.replace("\n","") for line in open("E:\DEV\\navan_ai_docs\prediction code\classes.names","r").readlines()]
+classes = {i:lines[i] for i in range(len(lines))}
+prediction_probability = {i:j for i,j in zip(classes.values(),result.tolist()[0])}
 
-print(result)
+print("\n\nPrediction: \n")
+print(prediction_probability)
