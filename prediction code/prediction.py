@@ -1,4 +1,5 @@
 import tensorflow as tf
+import tensorflow_hub as hub
 import numpy as np
 import argparse
 
@@ -14,7 +15,7 @@ class_path = args.class_path
 image_path = args.image_path
 
 #load model
-model = tf.keras.models.load_model(model_path)
+model = tf.keras.models.load_model(model_path,custom_objects={'KerasLayer':hub.KerasLayer})
 input_shape = model.input_shape[1:]
 
 # image preprocessing
