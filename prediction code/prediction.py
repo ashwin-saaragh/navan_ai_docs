@@ -22,6 +22,7 @@ input_shape = model.input_shape[1:]
 img = tf.keras.preprocessing.image.load_img(image_path,target_size=input_shape)
 img = tf.keras.preprocessing.image.img_to_array(img)
 img = np.expand_dims(img, axis=0)
+img = img/255
 
 # prediction
 result = model.predict(img)
