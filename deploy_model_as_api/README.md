@@ -18,4 +18,7 @@
                         "Class_2": "0.41486"
                 }
         }
-- 
+- We have sample scripts for your reference 
+
+  - [Sample Python Script](https://github.com/saaragh/navan_ai_docs/blob/main/deploy_model_as_api/sample.py) 
+  - [Sample JS script](https://github.com/saaragh/navan_ai_docs/blob/main/deploy_model_as_api/sample.js)
