@@ -7,7 +7,7 @@
                 curl --location 'http://54.164.153.6:5001/predict?token=<your token>' \
                 --form 'up_img=@<filepath to image>'
 - Please store token securely and pass it along with filepath to image to predict to the api
-- You can checkout the document for the api by visiting the link in your browser : [http://54.225.11.253:5001/docs](http://54.225.11.253:5001/docs)
+- You can checkout the document for the api by visiting the link in your browser : [API documentation](http://54.164.153.6:5001/docs)
 - API returns the predicted class and the probability for each class in the model
 
         {
