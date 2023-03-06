@@ -1,5 +1,5 @@
 var formdata = new FormData();
-formdata.append("up_img", fileInput.files[0], "<path to image file>");
+formdata.append("file", fileInput.files[0], "<path to image file>");
 
 var requestOptions = {
   method: 'POST',
