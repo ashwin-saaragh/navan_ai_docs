@@ -4,7 +4,7 @@
 
 - Once you click the deploy button and service is deployed you will get a token unique to your model and also a cURL sample
 
-                curl --location 'http://54.225.11.253:5001/upload_img?token=<your token>' \
+                curl --location 'http://54.164.153.6:5001/predict?token=<your token>' \
                 --form 'up_img=@<filepath to image>'
 - Please store token securely and pass it along with filepath to image to predict to the api
 - You can checkout the document for the api by visiting the link in your browser : [http://54.225.11.253:5001/docs](http://54.225.11.253:5001/docs)
