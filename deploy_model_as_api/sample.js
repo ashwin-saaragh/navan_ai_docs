@@ -7,7 +7,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://54.164.153.6:5001/predict?token=<your token>", requestOptions)
+fetch("https://inference.navan.ai/predict?token=<your token>", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));

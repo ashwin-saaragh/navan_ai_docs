@@ -1,6 +1,6 @@
 import requests
 
-url = "http://54.164.153.6:5001/predict?token=<your token>"
+url = "https://inference.navan.ai/predict?token=<your token>"
 
 payload={}
 files=[
