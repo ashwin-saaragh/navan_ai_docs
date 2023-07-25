@@ -12,4 +12,4 @@
 
         python pt_detection.py --model_path path/to/downloaded/model_file  --image_path path/to/image_file
 -  Please note if you're using python3.4 or above, try replacing **python** to **python3** if you're facing error while running the above command
-- Output file(eg.out_<img_file_name>) with bounding box on the detected object will be generated in the current working directory where the command was run.  
+- Output file(eg. out_<img_file_name>) with bounding box on the detected object will be generated in the current working directory where the command was run.  
